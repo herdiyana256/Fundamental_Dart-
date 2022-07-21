@@ -1,0 +1,51 @@
+Rangkuman Materi
+Pada modul ini kita telah mempelajari bagaimana menulis percabangan alur program berdasarkan kondisi yang terjadi pada aplikasi. Beberapa hal yang sudah kita pelajari, antara lain:
+
+Untuk mengakomodasi dan mengecek sebuah kondisi dapat menggunakan ekspresi if. Jika hasil ekspresi tersebut bernilai benar, maka blok kode di dalamnya akan dijalankan. Jika kondisi ekspresi bernilai false, kita dapat menggunakan ekspresi else.
+Menulis percabangan alur program menggunakan statement if-else.
+String calculateScore(num score) {
+  if (score > 90) {
+    return 'A';
+  } else if (score > 80) {
+    return 'B';
+  } else if (score > 70) {
+    return 'C';
+  } else if (score > 60) {
+    return 'D';
+  } else {
+    return 'E';
+  }
+}
+Menjalankan perintah kode secara berulang dapat menggunakan looping dengan statement for, while, ataupun do-while.
+Menuliskan perulangan menggunakan statement for sehingga tidak perlu menuliskan kode berulang secara manual.
+for (int i = 1; i <= 100; i++) {
+  print(i);
+}
+Perulangan while dan do-while merupakan infinite loop atau endless loop di mana program akan stucked pada proses perulangan yang menyebabkan eror pada aplikasi.
+Menuliskan kode perulangan menggunakan statement while dan do-while.
+var i = 1;
+
+while (i <= 100) {
+  print(i);
+  i++;
+}
+Gunakan keyword break pada perulangan untuk menghentikan/keluar dari proses iterasi.
+Keyword continue dapat digunakan pada proses perulangan untuk melewatkan proses iterasi dan melanjutkan ke proses iterasi berikutnya.
+Statement switch-case akan mengevaluasi variabel/ekspresi dengan kondisi menggunakan operator sama dengan (==). Jika nilai variabel sama dengan nilai kondisi, maka blok kode akan dijalankan.
+Gunakan keyword break pada statement switch-case untuk keluar dari proses switch.
+Menuliskan kode percabangan dengan switch-case untuk kondisi-kondisi yang sudah diketahui.
+switch (variable/expression) {
+  case value1:
+    // do something
+    break;
+  case value2:
+    // do something
+    break;
+  …
+  ...
+  default:
+    // do something else
+}
+Menarik bukan?
+
+Pada modul selanjutnya, Kita akan membahas tentang collections untuk menyimpan dan mengelola struktur data yang lebih kompleks. Penasaran? Silakan lanjut ke modul berikutnya.

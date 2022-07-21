@@ -1,0 +1,18 @@
+#Inheritance constructor
+Karena kelas Animal memiliki constructor untuk menginisialisasi properti di dalamnya, maka semua kelas turunannya juga perlu mengimplementasikan constructor tersebut. Oleh sebab itu ketika membuat kelas Cat tanpa mendefinisikan constructor kita akan mendapatkan eror. IntelliJ IDEA akan memberikan saran untuk membuat constructor.
+
+Code =>
+Cat(String name, int age, double weight) : super(name, age, weight);
+
+note : Keyword super di atas akan diarahkan ke constructor dari kelas Animal.
+
+note : Jika ingin menginisialisasikan nilai furColor melalui constructor, maka kita bisa menambahkan parameter di dalam constructor.
+
+
+Code =>
+Cat(String name, int age, double weight, String furColor) : super(name, age, weight) {
+  this.furColor = furColor;
+}
+Atau, kita bisa meringkasnya seperti yang telah kita pelajari pada materi constructor.
+
+Cat(String name, int age, double weight, this.furColor) : super(name, age, weight);
